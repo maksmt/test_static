@@ -1,0 +1,52 @@
+body{
+   background: #F6F6F6;
+   font-family: 'Poppins';
+}
+.container {
+   max-width: 1190px;
+   padding: 0 10px;
+   margin: 0 auto;
+
+   @media (max-width: 1190px) {
+      max-width: 970px;
+   }
+
+   @media (max-width: 991.98px) {
+      max-width: 750px;
+   }
+
+   @media (max-width: 767.98px) {
+      max-width: none;
+      padding: 0 10px;
+   }
+
+   
+         // @media (max-width: 1280px) {
+         //    width: 1250px;
+         // }
+   
+         // @media (max-width:767.98px) {
+         //    width: 735px;
+         // }
+   
+         // @media (max-width:1024px) {
+         //    width: 992px;
+         // }
+   
+         // @media (max-width:510px) {
+         //    width: 480px;
+         // }
+   
+         // @media (max-width:320px) {
+         //    width: 290px;
+         // }
+         //  @media (max-width:260px) {
+         //   width: 240px;
+         //  }
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import "footer";
+@import "null";
+@import "product";
