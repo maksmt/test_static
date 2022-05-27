@@ -1,13 +1,11 @@
 .product{
-   width: 353px;
+   width: 300px;
    margin: 0 auto;
-   margin-bottom: 200px;
+  
    height: 430px;
    position: relative;
    background-color: #fff;
-   @media (max-width:370px) {
-      width: 300px;
-   }
+   
    img{
       width: 100%;
       height: 242px;
@@ -30,35 +28,30 @@
       font-family: 'Playfair Display';
          font-style: normal;
          font-weight: 500;
-         font-size: 14px;
+         font-size: 13px;
          line-height: 19px;
          margin-top: 25px;
-         margin-left: 30px;
-         @media (max-width:370px) {
-               margin-left: 15px;
-            }
+         margin-left: 15px;
+         
    }
    .rayon{
       font-weight: 400;
       font-size: 11px;
       line-height: 16px;
-      margin-left: 30px;
+      margin-left: 15px;
       color: #888888;
       letter-spacing: 0.39em;
       margin-top: 5px;
-      @media (max-width:370px) {
-            margin-left: 15px;
-         }
+      
    }
    .rooms{
    display: flex;
    flex-direction: row;
-   width: 100%;
-   margin-left:30px;
+   width: 250px;
+   white-space: nowrapC;
+   margin-left:15px;
    margin-top: 27px;
-   @media (max-width:370px) {
-         margin-left: 15px;
-      }
+   
    span{
       font-weight: 600;
    }
@@ -77,20 +70,18 @@
       .baths {
          display: flex;
          flex-direction: row;
-         margin-left: 85px;
+         margin-left: 70px;
       }
    }
    .price{
       display: flex;
       flex-direction: row;
-      width: 297px;
+      width: 280px;
       margin: 0 auto;
       border-top: 1px solid #999999;
       margin-top: 20px;
       padding-top: 10px;
-      @media (max-width:370px) {
-            width: 280px;
-         }
+      
       img{
          width: 15px;
          height: 25px;
@@ -102,13 +93,14 @@
          font-weight: 700;
          font-size: 17px;
          line-height: 26px;
+         padding-left: 5px;
       }
       .reference{
          font-weight: 500;
          font-size: 12px;
          line-height: 18px;
          color: #A6A6A6;
-         margin-left: 49px;
+         margin-left: 42px;
          padding-top: 5px;
       }
    }
