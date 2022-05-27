@@ -1,5 +1,8 @@
 @import "fonts";
 @import "header";
+@import "footer";
+@import "properties";
+@import "product";
 @import "null";
 
 .container {
@@ -22,4 +25,50 @@ body {
     font-family: Poppins;
     font-weight: 400;
     color: #f6f6f6;
+    overflow-x: hidden;
+    .mouse {
+        .menu__list {
+            li:hover {
+                .sub-menu__list {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.touch {
+    .arrow {
+        display: block;
+    }
+    .sub-menu__list {
+        .open {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        padding: 15px;
+    }
+    .menu__list {
+        display: block;
+    }
+    .menu__list > li {
+        margin: 0px 0px 10px 0px;
+    }
+    .sub-menu__list {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .sub-menu__arrow.arrow {
+        right: 10px;
+        top: 15px;
+        border-bottom: none;
+        border-left: 10px solid transparent;
+        border-top: 10px solid #000;
+        border-right: 10px solid transparent;
+    }
 }

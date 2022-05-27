@@ -1,0 +1,106 @@
+.property__filter {
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    &-list {
+        flex-wrap: wrap;
+        position: absolute;
+        top: -22px;
+        position: relative;
+        display: flex;
+        a {
+            color: #000;
+        }
+        @media (max-width: 1056.98px) {
+            justify-content: center;
+            text-align: center;
+            gap: 15px;
+            margin-right: 0;
+        }
+        & > li:hover .sub-property__filter-list {
+            display: flex;
+            min-width: 100%;
+            left: 0;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            input {
+                margin-right: 10px;
+            }
+        }
+    }
+    .sub-property__filter-list {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        top: 48px;
+        padding: 10px 60px 10px 10px;
+        z-index: 10;
+
+        .sub-property__filter-item {
+            white-space: nowrap;
+            padding: 10px;
+        }
+    }
+    &-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000;
+        padding: 15px 74px 15px 15px;
+        margin-right: 20px;
+        background-color: #fff;
+        &:last-child {
+            margin-right: 0;
+        }
+        span {
+            position: absolute;
+            top: 21.5px;
+            right: 21.5px;
+        }
+    }
+    .submit__search-button {
+        display: flex;
+        align-items: center;
+        padding: 13px 78px;
+        color: #f6f6f6;
+        background-color: #000;
+        &:hover {
+            background-color: #fff;
+            color: #000;
+            border: 2px solid #000;
+            transition: 0.6s;
+        }
+    }
+}
+.property-catalog {
+    background-color: #f6f6f6;
+    position: relative;
+    padding: 60px 0 0 0;
+
+    .property-catalog__items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        margin-top: 20px;
+        padding-bottom: 37px;
+        .number__page {
+            color: #1e2832;
+        }
+        .current__page {
+            padding: 2px 6px;
+            border: 1px solid #1e2832;
+        }
+    }
+}
