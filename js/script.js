@@ -100,13 +100,15 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('.article__slider').slick({
         arrows: false,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         slidesToShow: 2,
+
         responsive: [{
             breakpoint: 1440,
             settings: {
-                slidesToShow: 1
+                slidesToShow: 1,
+                fade: true
             }
         }
         ]

@@ -14,7 +14,7 @@
             letter-spacing: 0.04em;
             text-transform: capitalize;
             margin-top: 24px;
-            color: #000000;
+            color: #000;
         }
         .article__title {
             font-weight: 500;
@@ -25,7 +25,7 @@
             z-index: 1;
             position: sticky;
             margin-top: 12px;
-            color: #000000;
+            color: #000;
         }
         .gray-square {
             position: absolute;
@@ -50,16 +50,24 @@
     &__slider {
         display: flex;
         justify-content: center;
-        margin: 0 auto;
-        &__slider-item {
-            margin-right: 10px;
-            img {
-                max-width: 710px;
+        margin: 40px auto;
+
+        &-item {
+            @media (max-width: 711px) {
+                padding: 0 10px;
             }
-            @media (max-width: 1440px) {
+            img {
+                @media (max-width: 711px) {
+                    width: 100%;
+                }
+            }
+        }
+        @media (max-width: 1440px) {
+            .slick-slide {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                width: 710px;
             }
         }
         max-width: 1440px;
@@ -81,6 +89,10 @@
                 color: #f6f6f6;
                 transition: 0.6s;
             }
+        }
+        @media (max-width: 480px) {
+            flex-direction: column;
+            gap: 20px;
         }
     }
 }
