@@ -4,6 +4,10 @@
 @import "properties";
 @import "product";
 @import "services";
+@import "company";
+@import "news-articles";
+@import "article";
+
 @import "null";
 
 .container {
@@ -25,7 +29,8 @@
 body {
     font-family: Poppins;
     font-weight: 400;
-    color: #f6f6f6;
+    color: #000;
+    background-color: #fff;
     overflow-x: hidden;
     .mouse {
         .menu__list {
@@ -45,6 +50,39 @@ body {
         .open {
             display: block;
         }
+    }
+}
+.slick-track {
+    display: flex;
+}
+.slick-list {
+    overflow: hidden;
+}
+.page__title {
+    font-family: "Playfair Display";
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 72px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #343434;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 37px;
+    .number__page {
+        color: #1e2832;
+        padding: 0px 8px;
+    }
+    .current__page {
+        border: 1px solid #1e2832;
     }
 }
 

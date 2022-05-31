@@ -58,15 +58,67 @@ $('.buyers').click(function () {
     document.querySelector('.buyers').classList.toggle('hide');
     document.querySelector('.renters').classList.remove('hide');
     document.querySelector('.sellers').classList.remove('hide');
-
-
+    document.querySelector('.renters__click').classList.add('hide');
 
 });
 $('.renters').click(function () {
     document.querySelector('.renters__click').classList.add('show');
-    document.querySelector('.renters').classList.toggle('hide');
+    document.querySelector('.renters').classList.add('hide');
     document.querySelector('.sellers').classList.remove('hide');
     document.querySelector('.buyers').classList.remove('hide');
-    document.querySelector('.sellers__click').classList.add('hide');
-    document.querySelector('.buyers__click').classList.add('hide');
+
 });
+
+
+$(document).ready(function () {
+    $('.agents__slider').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 680,
+            settings: {
+                slidesToShow: 1,
+            }
+        }],
+
+        slidesToShow: 4,
+    });
+});
+
+$(document).ready(function () {
+    $('.article__slider').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 2,
+        responsive: [{
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+        ]
+    });
+});
+$(".open-popup").click(function (event) {
+    event.preventDefault();
+    $(".popup-bg").fadeIn(600);
+    $("html").addClass("no-scroll");
+});
+$(".close-popup").click(function () {
+    $(".popup-bg").fadeOut(600);
+    $("html").removeClass("no-scroll");
+});
+
