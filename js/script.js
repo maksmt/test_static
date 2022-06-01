@@ -43,31 +43,7 @@ if (isMobile.any()) {
 } else {
     body.classList.add('mouse');
 }
-$('.sellers').click(function () {
-    document.querySelector('.sellers__click').classList.add('show');
-    document.querySelector('.sellers').classList.add('hide');
-    document.querySelector('.buyers').classList.remove('hide');
-    document.querySelector('.renters').classList.remove('hide');
-    document.querySelector('.buyers__click').classList.add('hide');
-    document.querySelector('.renters__click').classList.add('hide');
 
-
-});
-$('.buyers').click(function () {
-    document.querySelector('.buyers__click').classList.add('show');
-    document.querySelector('.buyers').classList.toggle('hide');
-    document.querySelector('.renters').classList.remove('hide');
-    document.querySelector('.sellers').classList.remove('hide');
-    document.querySelector('.renters__click').classList.add('hide');
-
-});
-$('.renters').click(function () {
-    document.querySelector('.renters__click').classList.add('show');
-    document.querySelector('.renters').classList.add('hide');
-    document.querySelector('.sellers').classList.remove('hide');
-    document.querySelector('.buyers').classList.remove('hide');
-
-});
 
 
 $(document).ready(function () {
@@ -100,7 +76,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('.article__slider').slick({
         arrows: false,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         slidesToShow: 2,
 
@@ -114,6 +90,9 @@ $(document).ready(function () {
         ]
     });
 });
+
+
+
 $(".open-popup").click(function (event) {
     event.preventDefault();
     $(".popup-bg").fadeIn(600);
@@ -124,3 +103,52 @@ $(".close-popup").click(function () {
     $("html").removeClass("no-scroll");
 });
 
+
+$(".open-form__popup").click(function (event) {
+    event.preventDefault();
+    $(".form__popup-bg").fadeIn(600);
+    $("html").addClass("no-scroll");
+});
+$(".close-form__popup").click(function () {
+    $(".form__popup-bg").fadeOut(600);
+    $("html").removeClass("no-scroll");
+});
+
+
+
+$('.sellers').click(function () {
+    document.querySelector('.sellers__click').classList.add('show');
+    document.querySelector('.sellers').classList.add('hide');
+    document.querySelector('.buyers').classList.remove('hide');
+    document.querySelector('.renters').classList.remove('hide');
+    document.querySelector('.buyers__click').classList.add('hide');
+    document.querySelector('.renters__click').classList.add('hide');
+
+
+
+});
+$('.buyers').click(function () {
+
+    document.querySelector('.buyers__click').classList.add('show');
+    document.querySelector('.buyers').classList.toggle('hide');
+    document.querySelector('.renters').classList.remove('hide');
+    document.querySelector('.sellers').classList.remove('hide');
+    document.querySelector('.renters__click').classList.remove('hide');
+    document.querySelector('.renters__click').classList.add('hide');
+
+});
+
+$('.renters').click(function () {
+    document.querySelector('.renters__click').classList.remove('hide');
+
+    document.querySelector('.renters__click').classList.toggle('show');
+    document.querySelector('.renters').classList.toggle('hide');
+    document.querySelector('.buyers__click').classList.remove('show');
+    // document.querySelector('.renters__click').classList.remove('show');
+
+    document.querySelector('.sellers').classList.remove('hide');
+    document.querySelector('.sellers__click').classList.add('hide');
+
+    document.querySelector('.buyers').classList.remove('hide');
+
+});
