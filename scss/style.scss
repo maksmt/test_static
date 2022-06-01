@@ -1,6 +1,100 @@
 body{
-   font-family: 'Poppins';
+font-family: Poppins;
+   font-weight: 400;
+   color: #000;
+   background-color: #fff;
    overflow-x: hidden;
+
+   .mouse {
+      .menu__list {
+         li:hover {
+            .sub-menu__list {
+               display: block;
+            }
+         }
+      }
+   }
+}
+
+.touch {
+   .arrow {
+      display: block;
+   }
+
+   .sub-menu__list {
+      .open {
+         display: block;
+      }
+   }
+}
+
+.arrow.active {}
+
+.slick-track {
+   display: flex;
+}
+
+.slick-list {
+   overflow: hidden;
+}
+
+.page__title {
+   font-family: "Playfair Display";
+   font-weight: 500;
+   font-size: 54px;
+   line-height: 72px;
+   letter-spacing: 0.04em;
+   text-transform: capitalize;
+   color: #343434;
+   display: flex;
+   justify-content: center;
+}
+
+.pagination {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+   align-items: center;
+   margin-top: 20px;
+   padding-bottom: 37px;
+
+   .number__page {
+      color: #1e2832;
+      padding: 0px 8px;
+   }
+
+   .current__page {
+      border: 1px solid #1e2832;
+   }
+}
+
+@media (max-width: 767px) {
+   .wrapper {
+      padding: 15px;
+   }
+
+   .menu__list {
+      display: block;
+   }
+
+   .menu__list>li {
+      margin: 0px 0px 10px 0px;
+   }
+
+   .sub-menu__list {
+      position: relative;
+      left: 0;
+      top: 0;
+   }
+
+   .sub-menu__arrow.arrow {
+      right: 10px;
+      top: 15px;
+      border-bottom: none;
+      border-left: 10px solid transparent;
+      border-top: 10px solid #000;
+      border-right: 10px solid transparent;
+   }
 }
 .container {
    max-width: 1190px;
@@ -20,33 +114,7 @@ body{
       padding: 0 10px;
    }
 
-   
-         // @media (max-width: 1280px) {
-         //    width: 1250px;
-         // }
-   
-         // @media (max-width:767.98px) {
-         //    width: 735px;
-         // }
-   
-         // @media (max-width:1024px) {
-         //    width: 992px;
-         // }
-   
-         // @media (max-width:510px) {
-         //    width: 480px;
-         // }
-   
-         // @media (max-width:320px) {
-         //    width: 290px;
-         // }
-         //  @media (max-width:260px) {
-         //   width: 240px;
-         //  }
-      }
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500;600&display=swap');
-       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+}
 @import "footer";
 @import "null";
 @import "product";
@@ -57,3 +125,10 @@ body{
 @import "career";
 @import "contact";
 @import "baryga";
+@import "properties";
+@import "product";
+@import "services";
+@import "company";
+@import "news-articles";
+@import "article";
+@import "fonts";
