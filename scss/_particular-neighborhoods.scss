@@ -1,0 +1,241 @@
+.container {
+   .titles{
+      text-transform: capitalize;
+      font-family: "Playfair Display";
+         font-size: 54px;
+         font-weight: 500;
+         line-height: 72px;
+         letter-spacing: 0.04em;
+         text-align: left;
+         @media (max-width:702px) {
+            font-size: 40px;
+         }
+   }
+   p{
+      text-transform: capitalize;
+         font-size: 14px;
+         font-weight: 400;
+         line-height: 21px;
+         letter-spacing: 0.04em;
+         text-align: left;
+         padding-top: 12px;
+   }
+   .first-part{
+      text-transform: capitalize;
+      margin-top: 33px;
+   }
+   .second-part{
+      text-transform: capitalize;
+      height: 764px;
+      position: relative;
+      padding-top: 17px;
+      margin-top: 17px;
+      overflow: hidden;
+      padding-left: 22px;
+      @media (max-width:991px) {
+         height: 850px;
+      }
+      @media (max-width:694px) {
+         height: 900px;
+      }
+      @media (max-width:595px) {
+      height: 950px;
+      }
+      @media (max-width:530px) {
+         height: 1000px;
+         padding-left: 0px;
+      }
+      @media (max-width:452px) {
+         height: 1060px;
+      }
+      @media (max-width:386px) {
+         height:1155px;
+      }
+      @media (max-width:354px) {
+         height: 1250px;
+      }
+      @media (max-width:332px) {
+         height: 1300px;
+      }
+      .gray-square{
+        z-index: -1;
+        height: inherit;
+        width: 1342px;
+        position: absolute;
+        right: 0px;
+        top:0px;
+        background-color: #f6f6f6;
+      }
+      .titles{
+            font-family: "Poppins";
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+            letter-spacing: 0.04em;
+            text-align: left;
+      }
+            .subtitle {
+               font-size: 18px;
+               font-weight: 500;
+               line-height: 27px;
+               letter-spacing: 0.04em;
+               text-align: left;
+               padding-top: 24px;
+            }
+      .list{
+      text-transform: capitalize;
+         padding-top: 12px;
+         
+         li{
+         list-style: inside;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0.04em;
+            text-align: left;
+         }
+      }
+   }
+   .third-part{
+      text-transform: capitalize;
+      margin-bottom: 34px;
+      margin-top: 12px;
+      .titles{
+         font-family: Poppins;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+            letter-spacing: 0.04em;
+            text-align: left;
+      }
+      .subtitle{
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+            letter-spacing: 0.04em;
+            text-align: left;
+            padding-top: 24px;
+      }
+   }
+}
+   //Sellers
+   .sellers{
+      text-transform: capitalize;
+   .title-sellers{
+      font-family: "Playfair Display";
+         font-size: 54px;
+         font-weight: 500;
+         line-height: 72px;
+         letter-spacing: 0.04em;
+         text-align: center;
+   }
+   p{
+         font-size: 14px;
+         font-weight: 400;
+         line-height: 21px;
+         letter-spacing: 0.04em;
+         text-align: left;
+   }
+   .first-part{
+      padding-left: 20px;
+         position: relative;
+         font-size: 24px;
+         font-weight: 500;
+         line-height: 36px;
+         letter-spacing: 0.04em;
+         text-align: left;
+         padding-right: 306px;
+         padding-top: 24px;
+         padding-bottom: 24px;
+         @media (max-width:991px) {
+               padding-right: 0px;
+            }
+         .gray-square{
+            position: absolute;
+            background-color: #f6f6f6;
+            width: 3063px;
+            height: 100%;
+            top:0px;
+            z-index: -1;
+            left: -2000px;
+            @media (max-width:1190px) {
+               width:350%;
+            }         }
+         .bold{
+               font-size: 16px;
+               font-weight: 500;
+               line-height: 24px;
+               letter-spacing: 0.04em;
+               text-align: left;
+               line-height: 24px;
+         }
+         p{
+            padding-top: 24px;
+         }
+   }
+   .secondd-part{
+      padding-left: 20px;
+      padding-top: 40px;
+      padding-right: 280px;
+      @media (max-width:991px) {
+         padding-right: 0px;
+      }
+      .title{
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+            letter-spacing: 0.04em;
+            text-align: left;
+      }
+      .subtitle{
+         margin-top: 24px;
+         margin-bottom: 12px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+            letter-spacing: 0.04em;
+            text-align: left;
+      }
+      p{
+         padding-top: 12px;
+
+      }
+      .list{
+         padding-top: 13px;
+         padding-left: 22px;
+         padding-bottom: 94px;
+         li{
+               font-size: 12px;
+               font-weight: 400;
+               line-height: 18px;
+               letter-spacing: 0.04em;
+               text-align: left;
+               padding-top: 9px;
+         }
+         li::before{
+            content:"—  ";
+         }
+      }
+   }
+   .third-part{
+      padding-left: 20px;
+      position: relative;
+      overflow: hidden;
+      padding-right: 280px;
+      margin-top: 12px;
+      padding-bottom: 12px;
+      margin-bottom: 0px;
+      @media (max-width:991px) {
+            padding-right: 0px;
+         }
+      .gray-square{
+         z-index: -1;
+         position: absolute;
+         height: 100%;
+         background-color: #f6f6f6;
+         width: 1342px;
+         left: 0px;
+         bottom: 0px;
+      }
+   }
+}

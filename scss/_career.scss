@@ -1,0 +1,147 @@
+.career{
+   letter-spacing: 0.04em;
+   position: relative;
+   .top-block{
+      padding-top: 41px;
+      padding-right: 304px;
+      padding-bottom: 31px;
+      @media (max-width:991px) {
+         padding-right: 0px;
+      }
+   .gray-square{
+      background-color: #f6f6f6;
+      position: absolute;
+      width: 70%;
+      height: 100%;
+      right: 0px;
+      bottom:0px;
+      z-index: -1;
+   }
+   p{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      span{
+         font-weight: 700;
+      }
+      a{
+         font-weight: 700;
+         text-decoration: underline;
+         color: black;
+         text-transform: none;
+      }
+   }
+}
+.grid-block{
+   display: flex;
+   flex-direction: row;
+   gap: 19px;
+   margin-bottom: 94px;
+   min-height: 1112px;
+   @media (max-width:1245px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+   }
+   img{
+      object-fit: cover;
+      @media (max-width:785px) {
+         width: 100%;
+      }
+   }
+   
+   .left{
+      display: flex;
+      flex-direction: column;
+   gap: 19px;
+   @media (max-width:785px) {
+         justify-content: center;
+         margin: 0 auto;
+      }
+   .left-down{
+      display: flex;
+      flex-direction: row;
+      gap: 19px;
+      @media (max-width:785px) {
+         flex-wrap: wrap;
+         justify-content: center;
+      }     
+      img:first-child{
+         width: 60%;
+         object-fit: cover;
+         @media (max-width:785px) {
+               display: none;
+            }
+         }
+      
+      img{
+         @media (max-width:785px) {
+            width: 100%;
+         }
+      }
+   }
+   }
+   .right{
+      display: flex;
+      flex-direction: column;
+      gap: 19px;
+      @media (max-width:1245px) {
+         width: 100%;
+      }
+      .think-sell{
+         height: 509px;
+         position: relative;
+         overflow: hidden;
+         display: flex;
+         flex-direction: column;
+         padding-top: 244px;
+         @media (max-width:1245px) {
+            width: 100%;
+            justify-content: center;
+         }
+         img{
+            position: absolute;
+            width: 294px;
+            height: 317px;
+            top:-62px;
+            right: -90px;
+         }
+         .title{
+         font-family: 'Playfair Display';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 54px;
+         line-height: 72px;
+         display: flex;
+         align-items: center;
+         text-align: center;
+         color: #f6f6f6;
+         }
+         div{
+            margin: 0 auto;
+            padding-top: 20px;
+            text-align: center;
+         }
+         button{
+            text-align: center;
+            border: 1px solid #f6f6f6;
+            width: 200px;
+            height: 35px;
+            a{
+               color: #f6f6f6;
+               font-weight: 400;
+                  font-size: 16px;
+                  line-height: 24px;
+            }
+         }
+         button:hover{
+            transition: 0.5s;
+            background-color: #f6f6f6;
+            a{
+               color:#0E2238;
+            }
+         }
+      }
+   }
+}
+}
