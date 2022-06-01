@@ -1,5 +1,6 @@
 body{
    font-family: 'Poppins';
+   overflow-x: hidden;
 }
 .container {
    max-width: 1190px;
@@ -51,3 +52,8 @@ body{
 @import "product";
 @import "header";
 @import "homepage";
+@import "neighborhoods";
+@import "particular-neighborhoods";
+@import "career";
+@import "contact";
+@import "baryga";
